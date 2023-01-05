@@ -16,8 +16,10 @@ body * {
   position: absolute;
   width: 300px;
   height: 600px;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  /* left: 0; */
+  top: 100px;
+  left: 200px;
   z-index: 100;
   cursor: pointer;
   text-align: center;
@@ -57,11 +59,73 @@ img {
   left: 44px;
   top: 96px;
 }
+#bg02_cont {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  bottom: -2px;
+  right: -1px;
+  background-color: rgba(1, 4, 54, 0.25);
+  transform-origin: bottom right;
+  transform: skewX(-15deg);
+  overflow: hidden;
+}
+
+#bg02 {
+  position: absolute;
+  opacity: 0.8;
+  transform: skewX(15deg);
+  right: 80px;
+  top: 0;
+}
+
+
+
+
+#bg03 {
+  position: absolute;
+  width: 300px;
+  height: 1100px;
+  top: -500px;
+  /* top: 600px; */
+
+  /* position: absolute; */
+  /* opacity: 0.8; */
+  /* -webkit-mask-image:url("./mask.svg"); */
+  -webkit-mask-image: url(mask.svg);
+  mask-image: url(mask.svg);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  /* -webkit-mask-position: 0 -500px;
+  mask-position: 0 -500px; */
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  background-color: red;
+}
+
+#bg03 > img {
+  position: absolute;
+  width: 300px;
+  /* top: -600px; */
+  top: 500px;
+  left: 0;
+}
+
+
+
+
 
 #tick01 {
   width: 40px;
   left: 16px;
   top: 111px;
+  overflow: hidden;
+}
+
+#tick01 img {
+  width: 40px;
 }
 
 #tick02 {
@@ -80,6 +144,14 @@ img {
   width: 26px;
   left: 51px;
   top: 346px;
+}
+
+.tick {
+  overflow: hidden;
+}
+
+.tick img {
+  width: 26px;
 }
 
 #pack {

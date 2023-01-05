@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=600" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 1, repeatDelay: 3 });
+        // var tl = new TimelineMax();
+        // setTimeout(() => {
+        //   console.log("15sec")
+        // }, 15000)
+        // setTimeout(() => {
+        //   console.log("20sec")
+        // }, 20000)
+        // setTimeout(() => {
+        //   console.log("30sec")
+        // }, 29900)
+
+        tl.to("#schirm", 0.4, { autoAlpha: 0 })
+        .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.4")
+        // .from("#bg02_cont", 0.8, { width: 0}, "+=1.2")
+        .from("#bg02", 1.2, { top: 600}, "+=1.2")
+        .from("#bg02 img", 1.2, { top: -600}, "-=1.2")
+        .from("#pack", 0.6, { opacity: 0, y: 20}, "-=1")
+        .from("#tick01", 0.6, { width: 0}, "+=0.1")
+        .staggerFromTo(".tick", 0.6, { width: 0}, {width: "26px"}, 0.7, "+=0.1")
+        
+        .from("#bg03", 0.5, { opacity: 0}, "+=0.2")
+        .to("#pack", 0.4, { scale: 1.93, y: -94, x: -74}, "-=0.5")
+        .from("#btn01", 0.5, { opacity: 0, scale: 1.5}, "-=0.2")
+        .from("#btn02", 0.5, { opacity: 0, scale: 1.5}, "-=0.2")
+        
+        .to("#btn01", 0.5, { opacity: 0}, "+=1.2")
+        .to("#btn02", 0.5, { opacity: 0}, "-=0.7")
+        .from("#fruits", 0.7, { x: 350}, "-=0.7")
+        .to("#pack", 0.5, { x: -500}, "-=0.5")
+        .from("#txt02", 0.5, { x: 300}, "-=0.7")
+        .from("#bg00", 0.7, { opacity: 0}, "-=0.7")
+        .to("#bg03", 0.7, { filter: "blur(10px)"}, "-=0.7")
+        .from("#vits", 0.9, { x: 300}, "-=0.5")
+        
+        .to("#vits", 0.7, { x: -300}, "+=2")
+        .to("#fruits", 1.2, { x: -350}, "-=0.9")
+        .to("#txt02", 0.5, { x: -300}, "-=0.9")
+        .from("#txt03", 0.5, { x: 300}, "-=1")
+        .from("#glucans", 0.5, { x: 300}, "-=1.1")
+        
+        .to("#glucans", 0.5, { x: -300}, "+=2")
+        .to("#txt03", 0.5, { x: -300}, "-=0.7")
+        .to("#fruits", 1, { x: -700}, "-=0.7")
+
+        .from("#bg04", 0.5, { opacity: 0}, "-=0.8")
+        .from("#txt04", 0.4, { x: 300}, "-=0.7")
+
+
+        .from("#bg05", 1.2, { top: 600}, "+=1.2")
+        .from("#bg05 img", 1.2, { top: -600}, "-=1.2")
+        .from("#pack2", 0.5, { opacity: 0, y: 20}, "-=0.5")
+        .to("#logo", 0.4, { x: -70, y: 21}, "-=0.5")
+        .from("#txt05", 0.5, { y: 50, opacity: 0}, "-=0.7")
+        .from("#legal", 0.5, { opacity: 0}, "-=0.7")
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+        <div id="bg01" class="el bg">
+          <img src="bg01.jpg" alt="">
+        </div>
+        <div id="txt01" class="el">
+          <img src="txt01.svg" />
+        </div>
+        <!-- frame02 -->
+        <div id="bg02">
+          <img src="bg02.jpg" alt="">
+        </div>
+        <div id="tick01" class="el">
+          <img src="tick.svg" />
+        </div>
+        <div id="tick02" class="el tick">
+          <img src="tick.svg" />
+        </div>
+        <div id="tick03" class="el tick">
+          <img src="tick.svg" />
+        </div>
+        <div id="tick04" class="el tick">
+          <img src="tick.svg" />
+        </div>
+        <!-- frame03 -->
+        <div id="bg00" class="el bg"></div>
+        <div id="bg03" class="el bg">
+          <img src="bg03.jpg" alt="">
+        </div>
+        <div id="btn01" class="el">
+          <img src="btn01.svg" />
+        </div>
+        <div id="btn02" class="el">
+          <img src="btn02.svg" />
+        </div>
+        <div id="pack" class="el">
+          <img src="pack.png" />
+        </div>
+        <!-- frame04 -->
+        <div id="fruits" class="el">
+          <div id="orange1" class="el">
+            <img src="orange.png" />
+          </div>
+          <div id="orange2" class="el">
+            <img src="orange.png" />
+          </div>
+          <div id="grapefruit" class="el">
+            <img src="grapefruit.png" />
+          </div>
+          <div id="raspberry1" class="el">
+            <img src="raspberry.png" />
+          </div>
+          <div id="raspberry2" class="el">
+            <img src="raspberry.png" />
+          </div>
+          <div id="raspberry3" class="el">
+            <img src="raspberry.png" />
+          </div>
+          <div id="raspberry4" class="el">
+            <img src="raspberry.png" />
+          </div>
+          <div id="currant1" class="el">
+            <img src="currant.png" />
+          </div>
+          <div id="currant2" class="el">
+            <img src="currant.png" />
+          </div>
+          <div id="currant3" class="el">
+            <img src="currant.png" />
+          </div>
+        </div>
+        <div id="vits" class="el">
+          <div id="vitc" class="el">
+            <img src="vitc.svg" />
+          </div>
+          <div id="se" class="el">
+            <img src="se.svg" />
+          </div>
+          <div id="zn" class="el">
+            <img src="zn.svg" />
+          </div>
+        </div>
+        <div id="glucans" class="el">
+          <div id="glucan1" class="el">
+            <img src="glucan1.png" />
+          </div>
+          <div id="glucan2" class="el">
+            <img src="glucan1.png" />
+          </div>
+          <div id="glucan3" class="el">
+            <img src="glucan3.png" />
+          </div>
+          <div id="glucan4" class="el">
+            <img src="glucan3.png" />
+          </div>
+        </div>
+        <div id="txt02" class="el">
+          <img src="txt02.svg" />
+        </div>
+        <div id="txt03" class="el">
+          <img src="txt03.svg" />
+        </div>
+        <!-- frame05 -->
+        <div id="bg04" class="el bg">
+          <img src="bg04.jpg" alt="">
+        </div>
+        <div id="txt04" class="el">
+          <img src="txt04.svg" />
+        </div>
+        <!-- frame06 -->
+        <div id="bg05">
+          <img src="bg03.jpg" alt="">
+        </div>
+        <div id="pack2" class="el">
+          <img src="pack2.png" />
+        </div>
+        <div id="txt05" class="el">
+          <img src="txt05.svg" />
+        </div>
+        <div id="legal" class="el">
+          <img src="legal.svg" />
+        </div>
+        <div id="logo" class="el">
+          <img src="logo.svg" />
+        </div>
+        <div id="schirm"></div>
+      </div>
+    </a>
+  </body>
+</html>
