@@ -26,11 +26,11 @@
 
         tl.to("#schirm", 0.4, { autoAlpha: 0 })
         .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.4")
-        .from("#bg02", 1.9, { top: 600, scale: 0.5}, "+=0.8")
-        .from("#bg02 img", 1.9, { top: -600, scale: 1.62}, "-=1.9")
-        .from("#pack", 0.4, { opacity: 0, y: 40}, "-=1.2")
-        .from("#tick01", 0.5, { width: 0}, "-=0.2")
-        .staggerFromTo(".tick", 0.5, { width: 0}, {width: "26px"}, 0.5, "-=0.1")
+        .from("#bg02", 0.9, {  x: 580}, "+=1.2")
+        .from("#bg02 img", 0.9, { x: -580}, "-=0.9")
+        .from("#pack", 0.4, { opacity: 0, y: 20}, "-=0.7")
+        .from("#tick01", 0.5, { width: 0}, "-=0.1")
+        .staggerFromTo(".tick", 0.5, { width: 0}, {width: "26px"}, 0.5, "+=0.1")
         
         .from("#bg03", 0.5, { opacity: 0}, "+=0.2")
         .to("#pack", 0.4, { scale: 1.93, y: -94, x: -74}, "-=0.5")
@@ -71,12 +71,12 @@
         .from("#txt04", 0.4, { x: 300}, "-=0.6")
 
 
-        .from("#bg05", 1.6, { top: 600, scale: 0.5}, "+=0.8")
-        .from("#bg05 img", 1.6, { top: -600, scale: 1.8}, "-=1.6")
-        .from("#pack2", 0.5, { opacity: 0, y: 20}, "-=1.4")
-        .to("#logo", 0.4, { x: -70, y: 21}, "-=1.2")
-        .from("#txt05", 0.5, { y: 50, opacity: 0}, "-=1.2")
-        .from("#legal", 0.5, { opacity: 0}, "-=1")
+        .from("#bg05", 0.9, {  x: 580}, "+=1.8")
+        .from("#bg05 img", 0.9, { x: -580}, "-=0.9")
+        .from("#pack2", 0.5, { opacity: 0, y: 20}, "-=0.5")
+        .to("#logo", 0.4, { x: -70, y: 21}, "-=0.5")
+        .from("#txt05", 0.5, { y: 50, opacity: 0}, "-=0.7")
+        .from("#legal", 0.5, { opacity: 0}, "-=0.7")
 
       });
     </script>
