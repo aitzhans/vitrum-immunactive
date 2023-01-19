@@ -7,6 +7,7 @@
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
     <script type="text/javascript">
       var clickTag = "#";
       document.addEventListener("DOMContentLoaded", function (event) {
@@ -64,10 +65,10 @@
         .from("#pack1", 0.4, { x: 300}, "-=0.9")
         .from("#txt04", 0.4, { x: 300}, "-=0.7")
         .to("#bg", 0.7, { filter: "blur(0px)"}, "-=0.7")
-        .from("#pack_grapefruit", 0.4, { opacity: 0, scale: 0.7, x: 100}, "-=0.6")
-        .from("#pack_berries2", 0.4, { opacity: 0, scale: 0.7, x: -100}, "-=0.5")
-        .from("#pack_berries1", 0.4, { opacity: 0, scale: 0.7, x: 100}, "-=0.4")
-        .from("#pack_berries3", 0.4, { opacity: 0, scale: 0.7, x: -100}, "-=0.3")
+        .from("#pack_grapefruit", 0.4, { opacity: 0, scale: 0.7, x: 100, ease: Back.easeOut.config(2)}, "-=0.6")
+        .from("#pack_berries2", 0.4, { opacity: 0, scale: 0.7, x: -100, ease: Back.easeOut.config(2)}, "-=0.5")
+        .from("#pack_berries1", 0.4, { opacity: 0, scale: 0.7, x: 100, ease: Back.easeOut.config(2)}, "-=0.4")
+        .from("#pack_berries3", 0.4, { opacity: 0, scale: 0.7, x: -100, ease: Back.easeOut.config(2)}, "-=0.3")
         .from("#btn03", 0.5, { opacity: 0, scale: 1.5}, "-=0.4")
 
 
@@ -80,8 +81,8 @@
 
         .to("#logo", 0.4, { scale: 0.5, x: -73}, "-=0.2")
         .to("#pack1", 0.5, { x: 60, y: -330, scale: 0.8}, "-=0.4")
-        .from("#fruits1", 0.5, { opacity: 0, x: -60}, "-=0.1") 
-        .from("#fruits2", 0.5, { opacity: 0, x: 30}, "-=0.3") 
+        .from("#fruits1", 0.5, { opacity: 0, x: -60, ease: Back.easeOut.config(2)}, "-=0.1") 
+        .from("#fruits2", 0.5, { opacity: 0, x: 30, ease: Back.easeOut.config(2)}, "-=0.3") 
         .from("#txt05", 0.5, { y: 50, opacity: 0}, "-=0.4")
         .from("#legal", 0.5, { opacity: 0}, "-=0.4")
 
