@@ -1,0 +1,356 @@
+@import url(anim.css);
+
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  /* top: 100px;
+  left: 200px; */
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fbfbff;
+  border: 1px #363636 solid;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg {
+  background-color: #fafaff;
+  width: 320px;
+  height: 100px;
+  filter: blur(0px);
+}
+
+#logo {
+  width: 105px;
+  left: 16px;
+  top: 38px;
+}
+
+#txt01 {
+  width: 112px;
+  left: 14px;
+  top: 25px;
+}
+
+#btn01 {
+  width: 99px;
+  left: 209px;
+  top: 31px;
+}
+#btn02 {
+  width: 99px;
+  left: 209px;
+  top: 57px;
+}
+
+#pack0 {
+  width: 56px;
+  left: 140px;
+  top: 0px;
+}
+
+
+
+#fruits {
+  width: 320px;
+  height: 280px;
+  left: 0px;
+  /* left: 310px; */
+  top: -15px;  
+  /* outline: 1px red solid; */
+}
+
+.fruit1 {
+  animation-duration: 8s;
+  /* animation-name: fruits-anim1; */
+  animation-timing-function: linear;
+}
+.fruit2 {
+  animation-duration: 8s;
+  /* animation-name: fruits-anim2; */
+  animation-timing-function: linear;
+}
+.fruit3 {
+  animation-duration: 8s;
+  /* animation-name: fruits-anim3; */
+  animation-timing-function: linear;
+}
+.fruit4 {
+  animation-duration: 8s;
+  /* animation-name: fruits-anim4; */
+  animation-timing-function: linear;
+}
+
+#orange1 {
+  width: 56px;
+  left: 157px;
+  top: 93px;
+  /* animation-name: fruits-anim1; */
+}
+
+#currant1 {
+  width: 28px;
+  left: 131px;
+  top: 25px;
+  /* animation-name: fruits-anim3; */
+}
+#currant2 {
+  width: 26px;
+  left: 147px;
+  top: 250px;
+  /* animation-name: fruits-anim3; */
+}
+#currant3 {
+  width: 40px;
+  left: 173px;
+  top:150px;
+  transform: rotate(-62deg);
+  /* animation-name: fruits-anim1; */
+  /* animation-duration: 1.2s; */
+}
+#currant4 {
+  width: 33px;
+  left: 95px;
+  top: 331px;
+  /* animation-name: fruits-anim3; */
+}
+#grapefruit {
+  width: 45px;
+  left: 199px;
+  top: 0px;
+  /* animation-name: fruits-anim1; */
+  /* animation-duration: 1.5s; */
+}
+#raspberry1 {
+  width: 30px;
+  left: 88px;
+  top: 90px;
+  /* animation-name: fruits-anim1; */
+}
+
+#raspberry2 {
+  width: 27px;
+  left: 118px;
+  top: 132px;
+  transform: rotate(90deg);
+  /* animation-name: fruits-anim4; */
+  /* animation-duration: 1.6s; */
+}
+#raspberry3 {
+  width: 37px;
+  left: 73px;
+  top: 219px;
+  /* animation-name: fruits-anim1; */
+  /* animation-delay: 1.5s; */
+}
+
+
+#vits {
+  width: 320px;
+  top: 10px;
+  /* left: 320px; */
+}
+
+.vit1, .vit2 {
+  animation-duration: 5s;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation-timing-function: linear;
+  /* animation-name: vit-anim1; */
+}
+
+#vitc {
+  width: 34px;
+  height: 34px;
+  left: 82px;
+  top: 3px;
+  transform: rotate(-10deg);
+  border-radius: 50%;
+  box-shadow: 1px 2px 6px rgba(1, 4, 54, 0.25);
+}
+
+#se {
+  width: 56px;
+  height: 56px;
+  left: 114px;
+  top: 26px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 6px rgba(1, 4, 54, 0.25);
+  /* animation-name: vit-anim2; */
+  /* animation-duration: 2s; */
+}
+
+#zn {
+  width: 37px;
+  height: 37px;
+  left: 163px;
+  top: 2px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 6px rgba(1, 4, 54, 0.25);
+  /* animation-name: vit-anim1; */
+  /* animation-duration: 1.5s; */
+}
+
+#glucans {
+  width: 320px;
+  top: 10px;
+}
+.glucan1, .glucan2 {
+  /* animation-name: glucan-anim1; */
+  animation-duration: 6s;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation-timing-function: linear;
+}
+#glucan1 {
+  width: 42px;
+  left: 58px;
+  top: -13px;
+  filter: blur(2px);
+  /* animation-name: glucan-anim1; */
+  /* animation-duration: 1.6s; */
+}
+#glucan2 {
+  width:40px;
+  left: 181px;
+  top: 76px;
+  filter: blur(1px);
+  /* animation-name: glucan-anim1; */
+  /* animation-name: glucan-anim3;
+  animation-duration: 1.6s; */
+}
+#glucan3 {
+  width: 79px;
+  left: 106px;
+  top: 7px;
+  /* animation-name: glucan-anim2; */
+  /* outline: 1px red solid; */
+  /* animation-name: glucan-anim1;
+  animation-duration: 2s; */
+}
+
+
+#txt02 {
+  width: 108px;
+  left: 204px;
+  top: 31px;
+}
+#txt03 {
+  width: 104px;
+  left: 204px;
+  top: 44px;
+}
+
+
+
+#btn03 {
+  width: 106px;
+  left: 90px;
+  top: 37px;
+}
+
+#txt04 {
+  width: 96px;
+  left: 206px;
+  top: 12px;
+}
+
+#pack1 {
+  width: 66px;
+  left: 107px;
+  top: 0px;
+}
+#pack_grapefruit {
+  width: 56px;
+  left: 91px;
+  top: 37px;
+}
+
+#pack_berries1 {
+  width: 32px;
+  left: 91px;
+  top: 80px;
+}
+#pack_berries2 {
+  width: 25px;
+  left: 163px;
+  top: 60px;
+}
+#pack_berries3 {
+  width: 13px;
+  left: 162px;
+  top: 81px;
+}
+
+#fruits1 {
+  width: 78px;
+  left: 98px;
+  top: 38px;
+}
+
+#fruits2 {
+  width: 14px;
+  left: 137px;
+  top: 84px;
+}
+
+
+
+
+
+
+
+#txt05 {
+  width: 74px;
+  left: 218px;
+  top: 4px;
+}
+#legal {
+  width: 92px;
+  left: 9px;
+  top: 56px;
+}
+
+
+
+
+
+#schirm {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: #fbfbff;
+  background-size: cover;
+  opacity: 1;
+}
