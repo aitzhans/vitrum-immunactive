@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=50" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+        // var tl = new TimelineMax();
+        // setTimeout(() => {
+        //   console.log("15sec")
+        // }, 15000)
+        // setTimeout(() => {
+        //   console.log("20sec")
+        // }, 20000)
+        // setTimeout(() => {
+        //   console.log("30sec")
+        // }, 29900)
+
+        tl.to("#schirm", 0.6, { autoAlpha: 0 })
+        .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.3")
+        .from("#pack0", 0.4, { opacity: 0, scale: 0.4, y: 60}, "-=0.2")
+        .from("#btn01", 0.5, { opacity: 0, scale: 1.5}, "-=0.2")
+        .from("#btn02", 0.5, { opacity: 0, scale: 1.5}, "-=0.2")
+        
+        .to("#btn01", 0.5, { opacity: 0}, "+=1.2")
+        .to("#btn02", 0.5, { opacity: 0}, "-=0.5")
+        .to("#txt01", 0.3, { opacity: 0, scale: 0.5 }, "-=0.4")
+        .to("#logo", 0.5, { scale: 0.75, y: -6, x: -6}, "-=0.2")
+        .to(".fruit1", 0, { animationName: 'fruits-anim1'}, "-=0.5")
+        .to(".fruit2", 0, { animationName: 'fruits-anim2'}, "-=0.5")
+        .to(".fruit3", 0, { animationName: 'fruits-anim3'}, "-=0.5")
+        .to(".fruit4", 0, { animationName: 'fruits-anim4'}, "-=0.5")
+        .from("#fruits", 0.7, { y: 100}, "-=0.6") 
+        .to("#pack0", 0.5, { y: -160}, "-=0.5")
+        .from("#txt02", 0.5, { y: 100}, "-=0.4")
+        .to("#bg", 0.7, { filter: "blur(10px)"}, "-=0.7")
+        .from("#vits", 0.8, { y: 80}, "-=0.8")
+        .to(".vit1", 0, { animationName: 'vit-anim1' }, '-=0.5')
+        .to(".vit2", 0, { animationName: 'vit-anim2' }, '-=0.5')
+
+        .to("#vits", 0.5, { y: -340}, "+=1.6")
+        .to(".glucan1", 0, { animationName: 'glucan-anim1' }, '-=0.6')
+        .to(".glucan2", 0, { animationName: 'glucan-anim2' }, '-=0.6')
+        .to("#fruits", 0.5, { y: -80}, "-=0.5")
+        .to("#txt02", 0.5, { y: -300}, "-=0.6")
+        .from("#txt03", 0.5, { y: 300}, "-=0.5")
+        .from("#glucans", 0.5, { y: 100}, "-=0.6")
+        
+        .to("#glucans", 0.5, { y: -200}, "+=1.8")
+        .to("#txt03", 0.5, { y: -100}, "-=0.5")
+        .to("#fruits", 0.8, { y: -200}, "-=0.4")
+        .to(".fruit", 0, { animation: 'unset'})
+        .to("#glucans  div", 0, { animation: 'unset'})
+        .to("#vits  div", 0, { animation: 'unset'})
+
+        .from("#pack1", 0.4, { y: 120}, "-=0.9")
+        .from("#txt04", 0.4, { y: 100}, "-=0.7")
+        .to("#bg", 0.7, { filter: "blur(0px)"}, "-=0.7")
+        .from("#pack_grapefruit", 0.5, { opacity: 0, scale: 0.7, x: 30, ease: Back.easeOut.config(2)}, "-=0.4")
+        .from("#pack_berries2", 0.5, { opacity: 0, scale: 0.7, x: -10, ease: Back.easeOut.config(1.7)}, "-=0.3")
+        .from("#pack_berries1", 0.5, { opacity: 0, scale: 0.7, x: 10, ease: Back.easeOut.config(1.7)}, "-=0.25")
+        .from("#pack_berries3", 0.5, { opacity: 0, scale: 0.7, x: -6, ease: Back.easeOut.config(1.7)}, "-=0.4")
+        .from("#btn03", 0.5, { opacity: 0, scale: 1.5}, "+=0.5")
+
+
+        .to("#btn03", 0.4, { opacity: 0}, "+=1.6")
+        .to("#txt04", 0.4, { opacity: 0, scale: 0.5 }, "-=0.4")
+        .to("#pack_grapefruit", 0.3, { opacity: 0, scale: 0.7, x: 10}, "-=0.4")
+        .to("#pack_berries2", 0.3, { opacity: 0, scale: 0.7, x: -10}, "-=0.4")
+        .to("#pack_berries1", 0.3, { opacity: 0, scale: 0.7, x: 10}, "-=0.4")
+        .to("#pack_berries3", 0.3, { opacity: 0, scale: 0.7, x: -10}, "-=0.4")
+
+        .to("#logo", 0.4, { scale: 0.5, x: -29, y: -18}, "-=0.2")
+        .to("#pack1", 0.5, { x: -21, y:-1, scale: 0.9}, "-=0.4")
+        .from("#fruits1", 0.6, { opacity: 0, x: -20, ease: Back.easeOut.config(2)}, "-=0.1") 
+        .from("#fruits2", 0.6, { opacity: 0, x: 10, ease: Back.easeOut.config(2)}, "-=0.3") 
+        .from("#txt05", 0.5, { y: 50, opacity: 0}, "-=0.4")
+        .from("#legal", 0.5, { opacity: 0}, "-=0.4")
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+
+        <div id="bg" class="el bg">
+          <img src="bg.jpg" alt="">
+        </div>
+        <div id="txt01" class="el">
+          <img src="txt01.svg" />
+        </div>
+        <div id="btn01" class="el">
+          <img src="btn01.svg" />
+        </div>
+        <div id="btn02" class="el">
+          <img src="btn02.svg" />
+        </div>
+        <div id="pack0" class="el">
+          <img src="pack0.png" />
+        </div>
+        <!-- frame04 -->
+        <div id="fruits" class="el">
+          <div id="orange1" class="el fruit1">
+            <img src="orange.png" />
+          </div>
+          <div id="grapefruit" class="el fruit1">
+            <img src="grapefruit.png" />
+          </div>
+          <div id="raspberry1" class="el fruit1">
+            <img src="raspberry.png" />
+          </div>
+          <div id="raspberry2" class="el fruit4">
+            <img src="raspberry.png" />
+          </div>
+          <div id="raspberry3" class="el fruit4">
+            <img src="raspberry.png" />
+          </div>
+          <div id="currant1" class="el fruit3">
+            <img src="currant.png" />
+          </div>
+          <!-- <div id="currant2" class="el fruit3">
+            <img src="currant.png" />
+          </div> -->
+          <div id="currant3" class="el fruit1">
+            <img src="currant.png" />
+          </div>
+        </div>
+        <div id="vits" class="el">
+          <div id="vitc" class="el vit1">
+            <img src="vitc.svg" />
+          </div>
+          <div id="se" class="el vit2">
+            <img src="se.svg" />
+          </div>
+          <div id="zn" class="el vit1">
+            <img src="zn.svg" />
+          </div>
+        </div>
+        <div id="glucans" class="el">
+          <div id="glucan1" class="el  glucan1">
+            <img src="glucan1.png" />
+          </div>
+          <div id="glucan2" class="el  glucan1">
+            <img src="glucan1.png" />
+          </div>
+          <div id="glucan3" class="el  glucan2">
+            <img src="glucan3.png" />
+          </div>
+        </div>
+        <div id="txt02" class="el">
+          <img src="txt02.svg" />
+        </div>
+        <div id="txt03" class="el">
+          <img src="txt03.svg" />
+        </div>
+
+        <!-- frame05 -->
+        <div id="pack_grapefruit" class="el">
+          <img src="pack_grapefruit.png" />
+        </div>
+        <div id="pack_berries2" class="el">
+          <img src="pack_berries2.png" />
+        </div>
+        <div id="fruits1" class="el">
+          <img src="fruits1.png" />
+        </div>
+        <div id="pack1" class="el">
+          <img src="pack1.png" />
+        </div>
+        <div id="pack_berries1" class="el">
+          <img src="pack_berries1.png" />
+        </div>
+        <div id="pack_berries3" class="el">
+          <img src="pack_berries3.png" />
+        </div>
+        <div id="txt04" class="el">
+          <img src="txt04.svg" />
+        </div>
+        <div id="btn03" class="el">
+          <img src="btn03.svg" />
+        </div>
+        <!-- frame06 -->
+
+
+        <div id="fruits2" class="el">
+          <img src="fruits2.png" />
+        </div>
+        <div id="txt05" class="el">
+          <img src="txt05.svg" />
+        </div>
+        <div id="legal" class="el">
+          <img src="legal.svg" />
+        </div>
+        <div id="logo" class="el">
+          <img src="logo.svg" />
+        </div>
+        <div id="schirm"></div> 
+      </div>
+    </a>
+  </body>
+</html>
